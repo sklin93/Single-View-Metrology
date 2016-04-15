@@ -204,36 +204,17 @@ guidata(hObject, handles);
 
 
 function transformHelper(invH, im, height, width)
-imgcoor1 = [0;0;1];
-imgcoor2 = [0;width;1];
-imgcoor3 = [height;0;1];
-imgcoor4 = [height;width;1];
-
-newcoor1 = invH * imgcoor1;
-newcoor2 = invH * imgcoor2;
-newcoor3 = invH * imgcoor3;
-newcoor4 = invH * imgcoor4;
-%perspective division
-newcoor1 = [newcoor1(1)/newcoor1(3); newcoor1(2)/newcoor1(3); 1];
-newcoor2 = [newcoor2(1)/newcoor2(3); newcoor2(2)/newcoor2(3); 1];
-newcoor3 = [newcoor3(1)/newcoor3(3); newcoor3(2)/newcoor3(3); 1];
-newcoor4 = [newcoor4(1)/newcoor4(3); newcoor4(2)/newcoor4(3); 1];
-
-
-tform = maketform('projective',[ 0 0;  height  0;  height  width; 0 width],...
-       [newcoor1(1) newcoor1(2); newcoor3(1) newcoor3(2); newcoor4(1) newcoor4(2);newcoor2(1) newcoor2(2)]);
-[B,xdata,ydata] = imtransform(im, tform, 'XYScale', 1);
-%warning('off', 'Images:initSize:adjustingMag');
-%figure, imshow(B,'InitialMagnification',60);
+% maketform - imtransform / projective2d - imwarp
+%im = imcrop(im);
+invH = invH';
+tform = projective2d(invH);
+B = imwarp(im, tform);
+warning('off', 'Images:initSize:adjustingMag');
 figure,[I2, rect] = imcrop(B); 
+
 delete(get(gca,'Children'));
 imshow(I2);
-% minX = min(min(min(newcoor1(1),newcoor2(1)),newcoor3(1)),newcoor4(1))
-% minY = min(min(min(newcoor1(2),newcoor2(2)),newcoor3(2)),newcoor4(2))
-% maxX = max(max(max(newcoor1(1),newcoor2(1)),newcoor3(1)),newcoor4(1))
-% maxY = max(max(max(newcoor1(2),newcoor2(2)),newcoor3(2)),newcoor4(2))
-% B = imcrop(B,[-minX maxY maxX -minY]);
-% figure, imshow(B);
+
 
 
 % --- Executes on selection change in drawPLines.

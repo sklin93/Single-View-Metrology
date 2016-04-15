@@ -1,0 +1,404 @@
+#VRML V2.0 utf8
+
+Collision {
+ collide FALSE
+ children [
+ Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "ceiling.bmp"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+     395.48333   1.98744 554.53623, 
+     -69.46301  63.72809 554.53623, 
+     -253.74267 -658.06336 554.53623, 
+      99.05565 -736.97910 554.53623, 
+     396.93559 -730.77173 554.53623, 
+
+   ]
+   }
+   coordIndex [
+    0,1,2,3,4,-1,
+   ]
+   texCoord TextureCoordinate {
+    point [
+     0.00 0.99,
+     0.67 1.00,
+     0.99 0.01,
+     0.47 0.01,
+     0.01 0.00,
+
+    ]
+   }
+   texCoordIndex [
+    0,1,2,3,4,-1,
+   ]
+   solid FALSE
+  }
+}
+ Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "back.bmp"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+      92.39962 -720.20679   2.96652, 
+      99.05565 -736.97910 554.53623, 
+     396.93559 -730.77173 554.53623, 
+     382.62186 -720.68629   2.96652, 
+
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1,
+   ]
+   texCoord TextureCoordinate {
+    point [
+     0.97 0.00,
+     0.99 0.99,
+     0.02 1.00,
+     0.04 0.01,
+
+    ]
+   }
+   texCoordIndex [
+    0,1,2,3,-1,
+   ]
+   solid FALSE
+  }
+}
+ Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "left.bmp"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+     390.46065 -50.20016   2.22385, 
+     382.62186 -720.68629   2.96652, 
+     396.93559 -730.77173 554.53623, 
+     395.48333   1.98744 554.53623, 
+
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1,
+   ]
+   texCoord TextureCoordinate {
+    point [
+     0.02 0.19,
+     0.99 0.19,
+     0.99 0.96,
+     0.03 0.96,
+
+    ]
+   }
+   texCoordIndex [
+    0,1,2,3,-1,
+   ]
+   solid FALSE
+  }
+}
+ Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "floor.bmp"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+     382.62186 -720.68629   2.96652, 
+     390.46065 -50.20016   2.22385,
+     -14.02759 -50.78711   2.96652, 
+     -244.67946 -721.63929   2.96652,  
+
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1,
+   ]
+   texCoord TextureCoordinate {
+    point [
+     0.245 0.98,
+     0.23 0.00,
+     0.70 0.01,
+     0.98 1.00,
+
+    ]
+   }
+   texCoordIndex [
+    0,1,2,3,-1,
+   ]
+   solid FALSE
+  }
+}
+ Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "fireplace2.bmp"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+      92.39962 -720.20679   2.96652, 
+      82.22424 -569.69318   2.96652, 
+      82.22424 -559.27605 554.53623 
+      99.05565 -736.97910 554.53623,
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1,
+   ]
+   texCoord TextureCoordinate {
+    point [
+     0.39 0.03,
+     0.66 0.02,
+     0.66 0.98,
+     0.46 0.97,
+
+    ]
+   }
+   texCoordIndex [
+    0,1,2,3,-1,
+   ]
+   solid FALSE
+  }
+}
+ Shape {
+   appearance Appearance {
+     texture ImageTexture {
+       url "fireplace1.bmp"
+     }
+   }
+   geometry IndexedFaceSet {
+     coord Coordinate {
+       point [
+         82.22424 -569.69318   2.96652,
+         -172 -569.69318   2.96652,
+         -172 -563.75605 345.2703,
+         82.22424 -563.75605 345.2703,
+       ]
+     }
+     coordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     texCoord TextureCoordinate {
+       point [
+         0.010000 0.010000,
+         0.990000 0.010000,
+         0.990000 0.990000,
+         0.010000 0.990000,
+       ]
+     }
+     texCoordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     solid FALSE
+   }
+}
+ Shape {
+   appearance Appearance {
+     texture ImageTexture {
+       url "fireplace3.bmp"
+     }
+   }
+   geometry IndexedFaceSet {
+     coord Coordinate {
+       point [
+        82.22424 -563.75605 345.2703,
+         -172 -563.75605 345.2703,  
+         -172 -559.27605 554.53623,
+         82.22424 -559.27605 554.53623,
+       ]
+     }
+     coordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     texCoord TextureCoordinate {
+       point [
+         0.000000 0.000000,
+         0.980000 0.000000,
+         0.980000 1.000000,
+         0.000000 1.000000,
+       ]
+     }
+     texCoordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     solid FALSE
+   }
+}
+ Shape {
+   appearance Appearance {
+     texture ImageTexture {
+       url "wallPaint.bmp"
+     }
+   }
+   geometry IndexedFaceSet {
+     coord Coordinate {
+       point [
+        78.22424 -563.75605 345.2703,
+         -168 -563.75605 345.2703,  
+         -155 -429.27605 554.53623,
+         72.22424 -429.27605 554.53623,
+       ]
+     }
+     coordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     texCoord TextureCoordinate {
+       point [
+         0.050000 0.000000,
+         1.000000 0.000000,
+         0.950000 0.950000,
+         0.050000 0.950000,
+       ]
+     }
+     texCoordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     solid FALSE
+   }
+}
+ Shape {
+   appearance Appearance {
+     texture ImageTexture {
+       url "leftWoman.png"
+     }
+   }
+   geometry IndexedFaceSet {
+     coord Coordinate {
+       point [
+        388.7535 -120.9518 -10.22385,
+        298.7535 -260.9518 -10.22385,  
+        282.7535 -220.9518 352.3321
+        400.7535 -120.9518 348.3321
+       ]
+     }
+     coordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     texCoord TextureCoordinate {
+       point [
+         0.00000 0.000000,
+         1.000000 0.000000,
+         1.0000 1.0000,
+         0.00000 1.0000,
+       ]
+     }
+     texCoordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     solid FALSE
+   }
+}
+ Shape {
+   appearance Appearance {
+     texture ImageTexture {
+       url "woman.png"
+     }
+   }
+   geometry IndexedFaceSet {
+     coord Coordinate {
+       point [
+        23.4110 -506.6954 -5.22385,
+        -100.5836  -452.9576 -3.22385,  
+        -100.5836  -452.9576 301.2614
+        23.4110 -506.6954 291.2614
+       ]
+     }
+     coordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     texCoord TextureCoordinate {
+       point [
+         0.00000 0.000000,
+         1.000000 0.000000,
+         1.0000 1.0000,
+         0.00000 1.0000,
+       ]
+     }
+     texCoordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     solid FALSE
+   }
+}
+Shape {
+   appearance Appearance {
+     texture ImageTexture {
+       url "men.png"
+     }
+   }
+   geometry IndexedFaceSet {
+     coord Coordinate {
+       point [
+        336.4318 -260.9518 -2.22385,
+        87.4707 -260.9518 -2.22385,  
+        87.4707 -260.9518 285.7196
+        336.4318 -260.9518 289.7196
+       ]
+     }
+     coordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     texCoord TextureCoordinate {
+       point [
+         0.00000 0.000000,
+         1.000000 0.000000,
+         1.0000 1.0000,
+         0.00000 1.0000,
+       ]
+     }
+     texCoordIndex [
+       0, 1, 2, 3, -1,
+     ]
+     solid FALSE
+   }
+}
+Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "rightBack.png"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+      -172 -736.20679   2.96652, 
+      -172 -736.97910 554.53623, 
+     -244 -736.77173 554.53623, 
+     -244 -736.68629   2.96652, 
+
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1,
+   ]
+   texCoord TextureCoordinate {
+    point [
+     0.97 0.00,
+     0.99 0.99,
+     0.02 1.00,
+     0.04 0.01,
+
+    ]
+   }
+   texCoordIndex [
+    0,1,2,3,-1,
+   ]
+   solid FALSE
+  }
+}
+ ] 
+}
